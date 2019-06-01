@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "924181432001",
+    "firebase_url": "https://memearchive-8fc80.firebaseio.com",
+    "project_id": "memearchive-8fc80",
+    "storage_bucket": "memearchive-8fc80.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924181432001:android:fa5364b85170586b",
+        "android_client_info": {
+          "package_name": "com.sutikshverma.meme_archive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "924181432001-cnkao39kj1nlbltdf1m4600orvvko7m5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqujt1xdrHcH8E5lXDp9H7RV3AusptJ5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "924181432001-cnkao39kj1nlbltdf1m4600orvvko7m5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
