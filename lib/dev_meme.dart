@@ -6,6 +6,8 @@ class DevMeme extends StatefulWidget {
 }
 
 class _DevMemeState extends State<DevMeme> {
+  String likeBtn = "unlike.png";
+  bool likeBool = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,21 +27,46 @@ class _DevMemeState extends State<DevMeme> {
               return Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: new Container(
-                  width: 280,
-                  height: 380,
                   color: Colors.white,
                   child: Column(
                     children: <Widget>[
                       Container(
-                        child: Image.asset("meme.jpg",
-                          fit: BoxFit.cover,
-                          height: ,),
+                        width: 300,
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: ListTile(
+                            leading: CircleAvatar(
+                              child: Image.asset("meme.jpg"),
+                            ),
+                            title: Text("Sutiksh Verma",
+                            style: TextStyle(fontWeight: FontWeight.bold),),
+                          ),
+                        ),
                       ),
                       Container(
-                        child: ListTile(
-                          leading: Image.asset("like.png",
-                          width: 35,
-                          height: 35,),
+                        width: 400,
+                        height: 280,
+                        child: Image.asset("meme.jpg",
+                          fit: BoxFit.contain,),
+                      ),
+                      GestureDetector(
+                        onTap: (){
+                          if(likeBool == false){
+                            likeBtn = "like.png";
+                            likeBool = true;
+                          }
+                          else{
+                            likeBtn = "unlike.png";
+                            likeBool = false;
+                          }
+                        },
+                        child: Container(
+                          width: 300,
+                          child: ListTile(
+                            leading: Image.asset(likeBtn,
+                            width: 35,
+                            height: 35,),
+                          ),
                         ),
                       ),
                     ],
